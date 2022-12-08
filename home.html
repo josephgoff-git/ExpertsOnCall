@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experts On Call</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+    <!-- <script src="https://kit.fontawesome.com/b652bf2780.js" crossorigin="anonymous"></script> -->
+    <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+</head>
+
+<body id="body">
+    <div id="container" class="container">
+        
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <p>Join our community with a month free on us!</p>
+        </div>
+        
+        <!-- Navigation -->
+        <div id="nav" class="nav">
+            <div id="nav-left" class="nav-left">
+                <button id="three-lines-icon" class="three-lines-icon" onclick="openSideBar()">
+                    <div class="three-lines-icon-1"></div>  
+                    <div class="three-lines-icon-2"></div> 
+                    <div class="three-lines-icon-3"></div> 
+                </button>  
+            </div>
+
+            <div id="nav-logo" class="nav-logo nav-logo-before">
+                <a href="home.html"><img src="images/logo10.png" alt=""></a> 
+            </div>
+
+            <div id="nav-left-replace" class="nav-left-replace">
+                <div id="nav-left-replace-p">
+                    <a href="home.html" class="nav-center-a dropdown1" id="nav-center-a1"><p id="nav-center-p1" class="nav-center-p">Find Experts</p></a>
+                    <a href="home.html" class="nav-center-a dropdown2" id="nav-center-a2"><p id="nav-center-p2" class="nav-center-p">Get Hired</p></a>
+                    <a href="home.html" class="nav-center-a dropdown3" id="nav-center-a3"><p id="nav-center-p3" class="nav-center-p">My Contacts</p></a>
+                    <a href="home.html" class="nav-center-a dropdown4" id="nav-center-a4"><p id="nav-center-p4" class="nav-center-p">Schedule a Meeting</p></a>
+                </div>
+
+
+
+                
+                <div id="nav-left-replace-line"></div>
+
+                <input type="text" id="nav-left-replace-input" placeholder="What do you need help with?" oninput="navLeftReplaceInputSwitchIcon()">
+            </div>
+        
+            <div id="nav-right" class="nav-right">
+                <button id="search-icon" class="search-icon" onclick="determineSearchPath()">
+                    <div id="search-mag">
+                        <div class="search-line"></div>
+                        <div class="search-circle"></div>
+                    </div>
+                    
+                    <div id="search-x">
+                        <div class="search-x-line1"></div>
+                        <div class="search-x-line2"></div>
+                    </div>
+                </button>
+
+                <a id="bag-icon" href="bag.html">
+                    <div class="bag-icon" >
+                        <div class="bag-circle"></div>
+                        <div class="bag-box">
+                        </div>
+                        <div class="bag-box2"></div>
+                        <div class="handles handle1"></div>
+                        <div class="handles handle2"></div>
+                    </div>
+                </a>  
+                
+                <a id="account-icon" class="account-icon" href="account.html">
+                    <div class="account-icons">
+                        <div class="account-circle-around"></div>
+                        <div class="account-circle"></div>
+                        <div class="account-circle2"></div>
+                       
+                    </div>
+                </a>
+
+                
+            </div>
+
+        </div>
+
+        <!-- Dropdown  -->
+        <div id="dropdown" class="dropdown">
+            <div id="dropdown-item1" class="dropdown-items dropdown1">
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Deck Building</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Pitch Decks</a>
+                    <a href="mens-new-arrivals.html">Key Data</a>
+                    <a href="mens-new-arrivals.html">Presentation</a> 
+                    
+                    <a href="mens-new-arrivals.html">Structure</a>
+                    <a href="mens-new-arrivals.html">Performance</a>
+                    <a href="mens-new-arrivals.html">Growth</a>
+                    <a href="mens-new-arrivals.html">Debt</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Fundraising</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Campaigns</a>
+                    <a href="mens-new-arrivals.html">Engagement</a>
+                    <a href="mens-new-arrivals.html">Reach</a>
+                    <a href="mens-new-arrivals.html">Value</a>
+                    <a href="mens-new-arrivals.html">Company Breakdown</a>
+                    <a href="mens-new-arrivals.html">Consumers Attraction</a>
+                    <a href="mens-new-arrivals.html">ROI</a>
+              
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Valuation Planning</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Market Capitalization</a>
+                    <a href="mens-new-arrivals.html">Cash Flow</a>
+                    <a href="mens-new-arrivals.html">Earning Potential</a>
+                    <a href="mens-new-arrivals.html">Planning Costs</a>
+                    <a href="mens-new-arrivals.html">Testing</a>
+                    <a href="mens-new-arrivals.html">Pivoting</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Risk Analysis</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Evaluating Threats</a>
+                    <a href="mens-new-arrivals.html">Support</a>
+                    <a href="mens-new-arrivals.html">Response</a>
+                    <a href="mens-new-arrivals.html">Debt</a>
+                    <a href="mens-new-arrivals.html">Bankruptcy</a>
+                    <a href="mens-new-arrivals.html">Planning</a>
+                    <a href="mens-new-arrivals.html">Execution</a>
+                    <a href="mens-new-arrivals.html">Driving change</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Product Development</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Prototyping</a>
+                    <a href="mens-new-arrivals.html">Research & Testing</a>
+                    <a href="mens-new-arrivals.html">Consumer Feedback</a>
+                    <a href="mens-new-arrivals.html">Suppliers</a>
+
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Financials</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Expected Revenue</a>
+                    <a href="mens-new-arrivals.html">Estimating COGS</a>
+                    <a href="mens-new-arrivals.html">Assets</a>
+
+                </div>
+                
+            </div>
+
+            <div id="dropdown-item2" class="dropdown-items dropdown2">
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Expertise</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Deck Building</a>
+                    <a href="mens-new-arrivals.html">Fundraising</a>
+                    <a href="mens-new-arrivals.html">Valuation Planning</a> 
+                    <a href="mens-new-arrivals.html">Risk Analysis</a>
+                    <a href="mens-new-arrivals.html">Product Development</a>
+                    <a href="mens-new-arrivals.html">Financials</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Looking For</a>
+                    <hr class="dropdown-hr">
+                    
+                    <a href="mens-new-arrivals.html">Students</a>
+                    <a href="mens-new-arrivals.html">Recent Entrants</a>
+                    <a href="mens-new-arrivals.html">Experienced</a>
+                    <a href="mens-new-arrivals.html">Struggling</a>
+                    <a href="mens-new-arrivals.html">Local</a>
+                    <a href="mens-new-arrivals.html">Long Term</a>
+                </div>
+                
+            
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Potential Clients</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Ashley Reader</a>
+                    <a href="mens-new-arrivals.html">Kevin Anderson</a> 
+                    <a href="mens-new-arrivals.html">John Dunlop</a>
+                    <a href="mens-new-arrivals.html">Haden Smith</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">New Requests</a>
+                    <hr class="dropdown-hr">
+
+          
+                    <a href="mens-new-arrivals.html">No New Requests...</a>
+   
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Jobs</a>
+                    <hr class="dropdown-hr">
+                    <a href="mens-new-arrivals.html">Offers</a>
+                    <a href="mens-new-arrivals.html">Interviews</a>
+                    <a href="mens-new-arrivals.html">Applications</a>
+                    <a href="mens-new-arrivals.html">Online Teaching</a>
+                    
+
+   
+                </div>
+            </div>
+
+            <div id="dropdown-item3" class="dropdown-items dropdown3">
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">New Contacts</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Jim Connors</a>
+                    <a href="mens-new-arrivals.html">Ashley Reader</a>
+                    <a href="mens-new-arrivals.html">Kevin Anderson</a> 
+                    <a href="mens-new-arrivals.html">John Dunlop</a>
+                    <a href="mens-new-arrivals.html">Pam Wright</a>
+                    <a href="mens-new-arrivals.html">Marylin Taggart</a>
+                    <a href="mens-new-arrivals.html">Paul Laventure</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Recent Meetings</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Alex Averill</a>
+                    <a href="mens-new-arrivals.html">Lily Savoie</a>
+                    <a href="mens-new-arrivals.html">John Dunlop</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Alex Arenburg</a>
+                    <a href="mens-new-arrivals.html">Hugh Janus</a>
+                    <a href="mens-new-arrivals.html">Maria Lynn</a>
+              
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Favorites</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">John Dunlop</a>
+                    <a href="mens-new-arrivals.html">Wright Frost</a>
+                    <a href="mens-new-arrivals.html">Rowan Wilson</a>
+                    <a href="mens-new-arrivals.html">Alex Aguilar</a>
+                    <a href="mens-new-arrivals.html">Jason Richards</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Messages</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">Kyle Kloska</a>
+                    <a href="mens-new-arrivals.html">Karen Andrews</a>
+                    <a href="mens-new-arrivals.html">Steven Kellog</a>
+                    <a href="mens-new-arrivals.html">Peter Griffin</a>
+                    <a href="mens-new-arrivals.html">Justin Root</a>
+
+
+
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Our Support Team</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">expertsoncall@gmail.com</a>
+                    <a href="mens-new-arrivals.html">600-144-2445</a>
+                    
+                </div>
+            </div>
+
+            <div id="dropdown-item4" class="dropdown-items dropdown4">
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Get on a Call</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">My Connections</a>
+                    <a href="mens-new-arrivals.html">Colleagues</a>
+                    <a href="mens-new-arrivals.html">Local Members</a>
+                    <a href="mens-new-arrivals.html">Advisors</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Planning</a>
+                    <hr class="dropdown-hr">
+
+                    <a href="mens-new-arrivals.html">My Schedule</a>
+                    <a href="mens-new-arrivals.html">New Meeting</a>
+                    <a href="mens-new-arrivals.html">Cancelations</a>
+                    <a href="mens-new-arrivals.html">Organization</a>
+                   
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Top Advisors</a>
+                    <hr class="dropdown-hr">
+                    <a href="mens-new-arrivals.html">Oliver Furson</a>
+                    <a href="mens-new-arrivals.html">Richard Kennedy</a>
+                    <a href="mens-new-arrivals.html">Pam Wright</a>
+                    <a href="mens-new-arrivals.html">Elizabeth Borowsky</a>
+                </div>
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Recent Calls</a>
+                    <hr class="dropdown-hr">
+                    <a href="mens-new-arrivals.html">Ashley Reader</a>
+                    <a href="mens-new-arrivals.html">Kevin Anderson</a> 
+                    <a href="mens-new-arrivals.html">John Dunlop</a>
+                    <a href="mens-new-arrivals.html">Haden Smith</a>
+                </div>
+
+
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Find Local Support</a>
+                    <hr class="dropdown-hr">
+                    <a href="mens-new-arrivals.html">Local Experts</a>
+                    <a href="mens-new-arrivals.html">Group Activities</a> 
+                    <a href="mens-new-arrivals.html">Shows & Events</a>
+                    <a href="mens-new-arrivals.html">Explore</a>
+                </div>
+            </div>
+
+            <div id="dropdown-item5" class="dropdown-items dropdown5">
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Clothing</a>
+                    <a href="mens-new-arrivals.html">Belts</a>
+                    <a href="mens-new-arrivals.html">Boxers</a>
+                    <a href="mens-new-arrivals.html">Hats & Visors</a> 
+                    <a href="mens-new-arrivals.html">Ties & Pocket Squares</a>
+                    <a href="mens-new-arrivals.html">Men's Flipjacks</a>
+                    <a href="mens-new-arrivals.html">Women's Flipjacks</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Skipjack Gear</a>
+                    <a href="mens-new-arrivals.html">Bags & Key Fobs</a>
+                    <a href="mens-new-arrivals.html">Beach Towels</a>
+                    <a href="mens-new-arrivals.html">Dog Accessories</a>
+                    <a href="mens-new-arrivals.html">Drinkware & Yeti</a>
+                    <a href="mens-new-arrivals.html">Rheos Nautical Eyewear</a>
+                    <a href="mens-new-arrivals.html">Skipjack Banners & Flags</a>
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Gifting</a>
+                    <a href="mens-new-arrivals.html">E-Gift Card</a>
+                    <a href="mens-new-arrivals.html">Fragrance</a>
+                    <a href="mens-new-arrivals.html">Gift Box</a>
+                </div>
+            </div>
+
+            <div id="dropdown-item6" class="dropdown-items dropdown6">
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Bedding</a>
+                    <a href="mens-new-arrivals.html">Sheet Sets</a>
+                    <a href="mens-new-arrivals.html">Comforters</a>
+                    <a href="mens-new-arrivals.html">Quilts</a>
+                    <a href="mens-new-arrivals.html">Decorative Pillows</a> 
+                    <a href="mens-new-arrivals.html">Shams</a> 
+                </div>
+                
+                <div class="dropdown-columns">
+                    <a href="mens-new-arrivals.html" class="dropdown-a-titles">Bath</a>
+                    <a href="mens-new-arrivals.html">Towels</a>
+                    <a href="mens-new-arrivals.html">Bath Mats</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Side Bar -->
+        <div id="sidebar" class="sidebar">
+            <div class="nav-right-S">
+                <button class="search-icon-S" onclick="determineSearchPath_S()">
+                    <div id="search-mag-S">
+                        <div class="search-line"></div>
+                        <div class="search-circle"></div>
+                    </div>   
+                    
+                    <div id="search-x-S">
+                        <div class="search-x-line1-S"></div>
+                        <div class="search-x-line2-S"></div>
+                    </div>
+                </button>
+                
+                <a class="account-icon" href="account.html">
+                    <div class="account-icons-S">
+                        <div class="account-icons">
+                            <div class="account-circle-around"></div>
+                            <div class="account-circle"></div>
+                            <div class="account-circle2"></div>
+                           
+                        </div>
+                    </div>
+                </a>
+
+                <a href="bag.html">
+                    <div class="bag-icon-S">
+                        
+                            <div class="bag-circle"></div>
+                            <div class="bag-box">
+                            </div>
+                            <div class="bag-box2"></div>
+                            <div class="handles handle1"></div>
+                            <div class="handles handle2"></div>
+                        
+                    </div>
+                </a>  
+ 
+            </div>
+
+            <hr id="sidebar-search-hr">
+
+            <input type="text" id="sidebar-search-input" placeholder="What do you need help with?" oninput="navLeftReplaceInputSwitchIcon_S()">
+            
+
+
+            <button id="close-btn" class="closebtn" onclick="closeSideBar()">&times;</button>
+
+            <div id="sidebar-items" class="sidebar-items">
+                <a href="mens-new-arrivals.html"><p class="sidebar-item sidebar-item2" data-sidebar-i>Entrepreneurship</p></a>
+                <hr class="sidebar-hr" style="height: 3px">
+                <a href="mens-new-arrivals.html"><p class="sidebar-item" data-sidebar-i>Deck Building</p></a>
+                <hr class="sidebar-hr">
+                <a href="mens-new-arrivals.html"><p class="sidebar-item" data-sidebar-i>Fundraising</p></a>
+                <hr class="sidebar-hr">
+                <a href="mens-new-arrivals.html"><p class="sidebar-item" data-sidebar-i>Valuation Planning</p></a>
+                <hr class="sidebar-hr">
+                <a href="mens-new-arrivals.html"><p class="sidebar-item" data-sidebar-i>Risk Analysis</p></a>
+                <hr class="sidebar-hr">
+                <a href="mens-new-arrivals.html"><p class="sidebar-item" data-sidebar-i>Product Development</p></a>
+                <hr class="sidebar-hr">
+                <a href="mens-new-arrivals.html"><p class="sidebar-item" data-sidebar-i>Accounting</p></a>
+            </div>
+        </div>
+
+        <!-- Home Page -->
+        <div id="homepage" class="homepage">
+            <section aria-label="Newest Photos">
+                <div id="carousel" class="carousel" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev"><p>></p></button>
+                    <button class="carousel-button next" data-carousel-button="next"><p>></p></button>
+                    
+                    <ul id="ul-carousel" data-slides>
+                        <li class="carousel-slide" data-active>
+                            <img src="images/im10.png" alt="" >
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/im1.png" alt="">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/im3.png" alt="">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/im11.jpeg" alt="">
+                        </li>
+                        <li class="carousel-slide">
+                            <img src="images/im7.jpeg" alt="">
+                        </li>
+                        
+                    </ul>
+                    
+                </div>  
+            </section>
+        
+            <!-- First Div -->
+            <div class="div1">
+                
+                <a href="#">
+                    <p class="div1-p1">
+                        Find answers tailored to you with the help of experienced entrepreneurs
+                    </p>
+                </a>
+            </div>
+
+            <div class="div-z0">
+                <a href="mens-new-arrivals.html">
+
+                <img style="cursor: pointer; margin-top: 7px;  width: 100%; height: auto;" src="images/blue2.png" alt="">
+                </a>
+            </div>
+
+
+            <div style="text-align: center; justify-content: center;" class="div-z">
+                <img style="width: 100%; height: auto;" src="images/div-z.png" alt="">
+            </div>
+
+            <a href="mens-new-arrivals.html"><div style="text-align: center; justify-content: center;" class="div-z2">
+                <p style="padding-top: 10px; font-weight: bold; font-size: 2.5rem; text-align: center; color: white; position: absolute; margin-top: 0px;">EXPLORE</p>
+                <p style="padding-top: 16.5px; font-size: 1.1rem; text-align: center; color: white; position: absolute; margin-top: 40px;">Top Recommendations For You</p>
+                
+            </div>
+            </a>
+
+            <div class="div-z3">
+                
+            </div>
+
+       
+
+            <!-- Second Div -->
+            <div class="div2">
+                <a href="mens-new-arrivals.html" class="mens-new-arrivals new-arrivals">
+                    <img src="images/mens-new-arrivals.png" alt="">
+                    <p class="div2-p1">Alex Masti  |  Risk Analysis </p>
+                    <p class="div2-p2">SEND A REQUEST</p>
+                </a>
+
+                <a href="mens-new-arrivals.html" class="womens-new-arrivals new-arrivals">
+                    <img src="images/headshot-1.jpeg" alt="">
+                    <p class="div2-p1">Sarah Davis  |  Marketing </p>
+                    <p class="div2-p2">SEND A REQUEST</p>
+                </a>
+            </div>
+
+            <a href="mens-new-arrivals.html"><div style="text-align: center; justify-content: center;" class="div3-1">
+                <p style="padding-top: 10px; font-weight: bold; font-size: 2.5rem; text-align: center; color: white; position: absolute; margin-top: 0px;">FIND INSPIRATION</p>
+                <p style="padding-top: 16.5px; font-size: 1.1rem; text-align: center; color: white; position: absolute; margin-top: 40px;">Speak to Experts Leading Their Field</p>
+                
+            </div>
+            </a>
+
+            <!-- 3rd Div -->
+            <div class="div3">
+                <p id="div3-p1"></p>
+                <div id="div3-buttons">
+                    <button id="div3-button-1">Creators</button>
+                    <button>Founders</button>
+                    <button>Investors</button>
+                    <button>Managers</button>
+                </div> 
+                
+                <div id="slider">         
+                        <div id="slider-inner">
+
+                                <div  style="text-align: center; " class="slide-items slide-item-1">
+                                    <a href="mens-new-arrivals.html"><img class="div3-img" src="images/im32.png" alt=""></a>
+                                    <a href="mens-new-arrivals.html" class="div3-p3"><p>Garett Camp</p></a>
+                                    <p class="div3-p4 ">Cofounder of Uber</p>
+                                </div>
+
+                                <div class="slide-items slide-item-2">
+                                    <a href="mens-new-arrivals.html"><img class="div3-img" src="images/im31.png" alt=""></a>
+                                    <a href="mens-new-arrivals.html" class="div3-p3"><p>Nathan Blecharczyk</p></a>
+                                    <p class="div3-p4 ">Peer-to-Peer Airbnb Cofounder</p>
+                                  
+                                </div>
+
+                                <div  style="text-align: center; " class="slide-items slide-item-3">
+                                    <a href="mens-new-arrivals.html"><img class="div3-img" src="images/im32.png" alt=""></a>
+                                    <a href="mens-new-arrivals.html" class="div3-p3"><p>Garett Camp</p></a>
+                                    <p class="div3-p4 ">Cofounder of Uber</p>
+                                </div>
+
+                                
+                                <div class="slide-items slide-item-4">
+                                    <a href="mens-new-arrivals.html"><img class="div3-img" src="images/im31.png" alt=""></a>
+                                    <a href="mens-new-arrivals.html" class="div3-p3"><p>Nathan Blecharczyk</p></a>
+                                    <p class="div3-p4 ">Peer-to-Peer Airbnb Cofounder</p>
+                                  
+                                </div>
+
+                                <div  style="text-align: center; " class="slide-items slide-item-5">
+                                    <a href="mens-new-arrivals.html"><img class="div3-img" src="images/im32.png" alt=""></a>
+                                    <a href="mens-new-arrivals.html" class="div3-p3"><p>Garett Camp</p></a>
+                                    <p class="div3-p4 ">Cofounder of Uber</p>
+                                </div>
+
+                                
+                                <div class="slide-items slide-item-6">
+                                    <a href="mens-new-arrivals.html"><img class="div3-img" src="images/im31.png" alt=""></a>
+                                    <a href="mens-new-arrivals.html" class="div3-p3"><p>Nathan Blecharczyk</p></a>
+                                    <p class="div3-p4 ">Peer-to-Peer Airbnb Cofounder</p>
+                                  
+                                </div>
+
+                                <div  style="text-align: center; " class="slide-items slide-item-7">
+                                    <a href="mens-new-arrivals.html"><img class="div3-img" src="images/im32.png" alt=""></a>
+                                    <a href="mens-new-arrivals.html" class="div3-p3"><p>Garett Camp</p></a>
+                                    <p class="div3-p4 ">Cofounder of Uber</p>
+                                </div>
+
+                        </div>
+                </div>
+
+                <button id="slider-button-prev" class="slider-buttons" onclick="sliderButtonLeft()">
+                    <svg id="svg1" xmlns="http://www.w3.org/2000/svg" width="3.5em" height="3.5em" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><path fill="white" d="m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5z"/></g></svg>
+                </button>
+
+                <button id="slider-button-next" class="slider-buttons" onclick="sliderButtonRight()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="3.5em" height="3.5em" viewBox="0 0 24 24"><path fill="white" d="m7.25 17l7.5-5l-7.5-5a.901.901 0 1 1 1-1.5l8.502 5.668a1 1 0 0 1 0 1.664L8.25 18.5a.901.901 0 1 1-1-1.5z"/></svg>
+                </button>
+            </div>
+
+            <!-- 6th Div -->
+            <div class="div6">
+                <!-- <a href="home.html"><img src="images/stores.png" alt=""></a>
+                <div class="div6-vl"></div> -->
+                <a href="home.html"><img src="images/gift-cards.png" alt=""></a>
+                <div class="div6-vl"></div>
+                <a href="home.html"><img src="images/catalog.png" alt=""></a>
+                <div class="div6-vl"></div>
+                <a href="home.html"><img src="images/st-rewards.png" alt=""></a>
+            </div>
+
+            <!-- 7th Div -->
+            <div class="div7">
+                <img src="images/logo10.png" style="background-color: white; border-radius: 50%;">
+                <p id="div7-p1">Join our mailing list to receive exclusive offers, news, and personal tips from experienced entrepreneurs.</p>
+                <input type="text" placeholder="Enter Your Email Adress">
+                <a href="home.html"><button id="div7-arrow-btn">
+                    <span id="div7-arrow-icon" class="iconify" data-icon="ion:arrow-forward-circle-outline"></span>
+                </button></a>
+                </input> 
+                <input type="text" placeholder="Phone Number (optional)">
+                <p style="text-align: center;" id="div7-p2">By clicking Sign Up, you agree to receive marketing text messages from Experts On Call at the number provided, including messages sent by autodialer. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy and Terms of Service.</p>
+                
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer">
+
+                <div id="footer-top" >
+              
+                    <button id="footer-btn-1" class="footer-opt" onclick="footerBtn1Flip()">
+                        <p class="fp1">Getting Started</p>
+                        <div id="fp2-1" class="footer-arrow-div">
+                            <p class="footer-arrow">^</p>
+                        </div>   
+                    </button>
+                    <hr class="footer-hr">
+                    <div id="footer-btn-1-display" class="footer-btn-display">
+                        <a href="home.html">Top Experts</a>
+                        <a href="home.html">Deck Building</a>
+                        <a href="home.html">Fundraising</a>
+                        <a href="home.html">Valuation Planning</a>
+                        <a href="home.html">Risk Analysis</a>
+                        <a href="home.html">Product Development </a>
+                        <a href="home.html">Accounting</a>
+
+                        <hr class="footer-hr footer-hr2">
+                    </div>
+
+                    <button id="footer-btn-2" class="footer-opt" onclick="footerBtn2Flip()">
+                        <p class="fp1">Account Info</p>
+                        <div id="fp2-2" class="footer-arrow-div">
+                            <p class="footer-arrow">^</p>
+                        </div>   
+                    </button>
+                    <hr class="footer-hr">
+                    <div id="footer-btn-2-display" class="footer-btn-display">
+                        <a href="home.html">My Account</a>
+                        <a href="home.html">Billing</a>
+                        <a href="home.html">Credit Card</a>
+                        <a href="home.html">Policies</a>
+                        <a href="home.html">Rewards</a>
+                        <hr class="footer-hr footer-hr2">
+                    </div>
+
+                    <button id="footer-btn-3" class="footer-opt" onclick="footerBtn3Flip()">
+                        <p class="fp1">Subscription</p>
+                        <div id="fp2-3" class="footer-arrow-div">
+                            <p class="footer-arrow">^</p>
+                        </div>   
+                    </button>
+                    <hr class="footer-hr">
+                    <div id="footer-btn-3-display" class="footer-btn-display">
+                        <a href="home.html">Cancel Plan</a>
+                         <a href="home.html">FAQ</a>
+                        <a href="home.html">Membership</a>
+                        <a href="home.html">Discounts</a>
+                        <a href="home.html">Gifting</a>
+                        <hr class="footer-hr footer-hr2">
+                    </div>
+
+                    <button id="footer-opt-4" class="footer-opt" onclick="footerBtn4Flip()">
+                        <p class="fp1">Our Crew</p>
+                        <div id="fp2-4" class="footer-arrow-div">
+                            <p class="footer-arrow">^</p>
+                        </div>   
+                    </button>
+                    <hr id="last-footer-hr" class="footer-hr" style="opacity: 0;">
+                    <div id="footer-btn-4-display" class="footer-btn-display">
+                        
+                        <a href="home.html">Our Mission</a>
+                        <a href="home.html">Company History</a>
+                        <a href="home.html">News & Press</a>
+                        <a href="home.html">Careers</a>
+                        <a href="home.html">Partnerships</a>
+                    </div>
+
+                </div>
+
+                <div class="footer-middle">
+                    <p id="footer-middle-p1">@ Experts On Call</p>
+
+                    <div id="footer-middle-p2">
+                        <a href="home.html">Contact Us</a>
+                        <a href="home.html">855-890-8334</a>
+                        <a href="home.html">Site Map</a>
+                        <a href="home.html">Privacy Policy</a>
+                        <a href="home.html">Terms & Conditions</a>
+                    </div>
+
+                    <div class="footer-middle-icons">
+                        <a href="home.html"><span class="iconify footer-middle-icon" data-icon="fa:facebook-square"></span></a>
+                        <a href="home.html"><span class="iconify footer-middle-icon" data-icon="akar-icons:twitter-fill"></span></a>
+                        <a href="home.html"><span class="iconify footer-middle-icon" data-icon="akar-icons:pinterest-fill"></span></a>
+                        <a href="home.html"><span class="iconify footer-middle-icon" data-icon="bi:instagram"></span></a>
+                        <a href="home.html"><span class="iconify footer-middle-icon" data-icon="fa-brands:tiktok"></span></a>
+                    </div>
+                </div>
+
+                <hr id="hr1">
+
+                <div class="footer-bottom">
+                    <p>ABOUT US</p>
+                    <p>Experts On Call began in 2022 with a vision to provide anyone with the opportunity to connect and learn from top experts in the business world. 
+                        At heart we hope to make it easier to progress through the various obstacles which may appear while creating a business.  
+                        It is our desire that our platform will remove many of the fears of being an entrepreneur, and find inspiration in the incredible success and knowledge of our many experts. 
+                    </p>
+                    <p>Stay Up To Date
+                    </p>
+                    <p> Keep up with the latest additions to our teaching community through our news letters. Through our various subscriptions we make it easy for anyone to make the most use of our services. 
+                        Send personal requests to anyone with an offer for their time, or even write a query for free knowing that our experts are here to make your life less stressful. 
+                        
+                    Want more inspiration and tips? Read our On Call blog sent out every Sunday, including the latest trends and tutorials on the basics of running a business. 
+                    </p>
+                    <p>
+                    If you value ease of connection we bring, go ahead and follow us on social media. 
+                    Your support is greatly appreciated!
+                    </p>
+                </div>
+            </div>
+        
+            <!-- Message Board Button -->
+            <button id="message-icon" onclick="showMessageBoard()">
+                    <div id="message-button-gone">
+                        <div class="message-icon-out"></div>
+                        <div class="message-icon-in"></div>
+                        <div class="message-icon-in-wb"></div>
+                        <div class="message-icon-in-wd dot1"></div>
+                        <div class="message-icon-in-wd dot2"></div>
+                        <div class="message-icon-in-wd dot3"></div>
+                    </div>
+            </button>
+
+            <button id="message-close-btn" class="message-close-btn" onclick="closeMessageBoard()">
+                <div class="message-icon-out">
+                    <p id="msg-close-btn-times">&times;</p>
+                </div>
+            </button>
+            
+            <!-- Message Board -->
+            <div id="message-board">
+                <p class="message-board-title">Talk to our Support Staff</p>
+                <button class="message-board-opt"><p>Report an Issue</p><p class="mbp2">></p></button>
+                <hr class="message-board-hr">
+                <button class="message-board-opt"><p>Request a Refund</p><p class="mbp2">></p></button>
+                <hr class="message-board-hr">
+                <button class="message-board-opt"><p>Submit a Compaint</p><p class="mbp2">></p></button>
+                <hr class="message-board-hr">
+                <button class="message-board-opt"><p>Cancel Subscription</p><p class="mbp2">></p></button>
+                <textarea id="message-board-input" type="text" placeholder="Type a message..."></textarea>
+                <button id="send-message">Send</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
